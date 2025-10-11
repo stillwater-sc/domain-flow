@@ -154,10 +154,11 @@ disableShortcutsTitle = false
 
 
 
-# Disable search function. It will hide search bar
-disableSearch = false
-# Disable search in hidden pages, otherwise they will be shown in search box
-disableSearchHiddenPages = false
+# Search configuration (updated for theme 8.x)
+[params.search]
+  disable = false
+  # Disable search in hidden pages, otherwise they will be shown in search box
+  disableHiddenPages = false
 # Disables hidden pages from showing up in the sitemap and on Google (et all), otherwise they may be indexed by search engines
 disableSeoHiddenPages = false
 # Disables hidden pages from showing up on the tags page although the tag term will be displayed even if all pages are hidden
@@ -236,19 +237,14 @@ disablePrintButton = false
 # disabled.
 disableNextPrev = false
 
-# If set to true, load the MathJax module on every page regardless if a MathJax shortcode is present
-math.force = true
-# Specifies the remote location of the MathJax js
+# MathJax configuration
+mathJaxInitialize = '{}'  # Theme 8.x provides sensible defaults
 customMathJaxURL = 'https://unpkg.com/mathjax/es5/tex-mml-chtml.js'
-# Initialization parameter for MathJax, see MathJax documentation
-#mathJaxInitialize = '{ "chtml": { "displayAlign": "left" }, { "tex": { "inlineMath": [["\(", "\)"], ["@", "@"]], displayMath: [["\[", "\]"], ["@@", "@@"]] }, "options": { "enableMenu": false }'
-mathJaxInitialize = '{}'
-# If set to false, load the Mermaid module on every page regardless if a Mermaid shortcode or Mermaid codefence is present
-mermaid.force = false
-# Specifies the remote location of the Mermaid js
-customMermaidURL = "https://unpkg.com/mermaid/dist/mermaid.min.js"
-# Initialization parameter for Mermaid, see Mermaid documentation
-mermaidInitialize = "{ \"theme\": \"default\" }"
+# Mermaid configuration (updated for theme 8.x)
+[params.mermaid]
+  force = false
+  customURL = "https://unpkg.com/mermaid/dist/mermaid.min.js"
+  initialize = "{ \"theme\": \"default\" }"
 # If set to false, load the Swagger module on every page regardless if a Swagger shortcode is present
 #disableSwagger = false
 # Specifies the remote location of the RapiDoc js
@@ -275,6 +271,11 @@ mermaidInitialize = "{ \"theme\": \"default\" }"
       table = true
       taskList = true
       typographer = true
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
     [markup.goldmark.parser]
       autoHeadingID = true
       autoHeadingIDType = 'github'

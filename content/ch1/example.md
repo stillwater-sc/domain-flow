@@ -70,4 +70,4 @@ of input operands to avoid memory elements.
 
 In the next segment, let's explore these execution patterns.
 
-<a name="derivation">1</a>: [Derivation of Domain Flow Matmul](https://stillwater-sc.github.io/domain-flow/introduction/derivation)</a>
+<a name="derivation">1</a>: [Derivation of Domain Flow Matmul](https://stillwater-sc.github.io/domain-flow/ch1/derivation)</a>

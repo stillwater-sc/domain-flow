@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: Build Site
-        run: hugo --minify
+        run: hugo --minify --baseURL="https://stillwater-sc.github.io/domain-flow"
 
       - name: Deploy Site
         uses: peaceiris/actions-gh-pages@v3
