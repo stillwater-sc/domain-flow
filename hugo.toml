@@ -1,8 +1,8 @@
 languageCode = "en-us"
 title = "Domain Flow Architecture"
 baseURL = "https://stillwater-sc.github.io/domain-flow"
-canonifyURLs = true
-relativeURLs = true
+#canonifyURLs = true
+#relativeURLs = true
 theme = [ "hugo-theme-relearn" ]
 
 # for search functionality

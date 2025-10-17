@@ -22,7 +22,7 @@ elements simultaneously operating on different data.
 
 The diagram below shows the Flynn Taxonomy <sup>[2](#wikipedia)</sup>:
 
-{{< figure src="/images/flynn-taxonomy.png" title="Flynn's Parallel Computer Taxonomy" >}}
+{{< figure src="/domain-flow/images/flynn-taxonomy.png" title="Flynn's Parallel Computer Taxonomy" >}}
 
 The availability of inexpensive microprocessors has made it possible to create cost-effective
 parallel *MIMD* machines. A parallel program running on such a distributed architecture

@@ -38,7 +38,7 @@ move farther away.
 Spacetime has a geometric interpretation of the relationship between space and time, called
 the spacetime light cone, as shown here:
 
-{{< figure src="/images/spacetime-light-cone.png" title="Spacetime Light Cone" >}}
+{{< figure src="/domain-flow/images/spacetime-light-cone.png" title="Spacetime Light Cone" >}}
 
 The spacetime light cone is a visual mnemonic device to think about which events in spacetime can affect 
 each other. Parallel computation requires the distribution of information and is thus constrained by
